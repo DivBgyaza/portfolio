@@ -1,5 +1,6 @@
 :root {
   --color-purple-100: #f2ebff;
+  --color-purple-50: #faf7ff;
   --color-purple-300: #d7c2ff;
   --color-purple-700: #6436b4;
   --color-purple-900: #32156a;
@@ -16,5 +17,7 @@
   --radius-md: 0.75rem;
   --content-width: 72rem;
   --shadow-soft: 0 1rem 3rem rgb(50 21 106 / 0.08);
+  --shadow-card: 0 1.5rem 4rem rgb(50 21 106 / 0.16);
   --transition-fast: 180ms ease;
+  --transition-smooth: 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
