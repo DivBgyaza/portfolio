@@ -1,9 +1,10 @@
 import { Footer } from './components/Footer.jsx'
 import { Header } from './components/Header.jsx'
-import { aboutContent, heroContent, portfolioSections, servicesContent } from './data/portfolio.js'
+import { aboutContent, heroContent, portfolioSections, servicesContent, skillsContent } from './data/portfolio.js'
 import { About } from './sections/About.jsx'
 import { Hero } from './sections/Hero.jsx'
 import { Services } from './sections/Services.jsx'
+import { Skills } from './sections/Skills.jsx'
 import { SectionPlaceholder } from './sections/SectionPlaceholder.jsx'
 
 export default function App() {
@@ -15,7 +16,8 @@ export default function App() {
         <Hero content={heroContent} />
         <About content={aboutContent} />
         <Services content={servicesContent} />
-        {portfolioSections.slice(3).map((section) => (
+        <Skills content={skillsContent} />
+        {portfolioSections.slice(4).map((section) => (
           <SectionPlaceholder key={section.id} section={section} />
         ))}
       </main>

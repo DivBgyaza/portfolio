@@ -49,3 +49,32 @@ export const servicesContent = {
     { icon: 'solutions', title: 'Digital Solutions', description: 'End-to-end support for digital ideas, combining planning, design, development and implementation into one coordinated solution.' },
   ],
 }
+
+export const skillsContent = {
+  eyebrow: 'Skills & Technologies',
+  heading: 'The tools and capabilities behind my work.',
+  introduction: 'My skill set combines software development, design, information technology and security-conscious problem-solving to deliver complete digital solutions.',
+  categories: [
+    {
+      title: 'Frontend Development',
+      skills: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Responsive Web Design', 'Accessible Interfaces'],
+    },
+    {
+      title: 'Backend Development',
+      skills: ['Node.js', 'REST API Development', 'Database Integration', 'PostgreSQL', 'Authentication and Authorization', 'Secure Backend Practices'],
+    },
+    {
+      title: 'Programming & Development Tools',
+      skills: ['Java', 'Python', 'Git', 'GitHub', 'VS Code', 'Vite'],
+    },
+    {
+      title: 'UI/UX & Creative Design',
+      skills: ['UI/UX Design', 'Wireframing', 'Prototyping', 'Graphic Design', 'Brand Identity', 'Motion Design'],
+    },
+    {
+      title: 'IT & Cybersecurity',
+      skills: ['IT Support', 'System Troubleshooting', 'Computer Networking', 'Cybersecurity Fundamentals', 'Web Application Security', 'Security-Conscious Development'],
+    },
+  ],
+  process: ['Plan', 'Design', 'Develop', 'Secure', 'Deliver'],
+}
