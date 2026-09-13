@@ -1,3 +1,8 @@
+import belnavoCover from '../assets/projects/belnavo-tech.png'
+import mhwunCover from '../assets/projects/mhwun-katsina.png'
+import mkMedicareCover from '../assets/projects/mk-medicare.png'
+import highTechCover from '../assets/projects/high-tech-welders.png'
+
 export const portfolioSections = [
   {
     id: 'home',
@@ -77,4 +82,56 @@ export const skillsContent = {
     },
   ],
   process: ['Plan', 'Design', 'Develop', 'Secure', 'Deliver'],
+}
+
+export const projectsContent = {
+  eyebrow: 'Selected Work',
+  heading: 'Digital solutions built for real people and organizations.',
+  introduction: 'A selection of websites and digital experiences I have designed and developed for businesses, brands and organizations.',
+  projects: [
+    {
+      title: 'BelNavo Tech',
+      description: 'A digital solutions platform presenting web development, UI/UX design, branding, motion and online booking services for clients and businesses.',
+      category: 'Business Platform',
+      services: ['Web Development', 'UI/UX Design', 'Branding', 'Booking Experience'],
+      url: 'https://belnavo-tech.onrender.com/',
+      cover: belnavoCover,
+      coverAlt: 'Screenshot of the BelNavo Tech digital solutions platform and service offerings',
+      coverWidth: 2710,
+      coverHeight: 1554,
+    },
+    {
+      title: 'MHWUN Katsina State Council',
+      description: 'An official organizational website providing union information, announcements, events, membership services and secure staff administration.',
+      category: 'Organization Website',
+      services: ['Full-Stack Development', 'Membership Experience', 'Content Management', 'Security-Conscious Development'],
+      url: 'https://www.mhwunktn.org/',
+      cover: mhwunCover,
+      coverAlt: 'Screenshot of the MHWUN Katsina State Council website and its membership information',
+      coverWidth: 2704,
+      coverHeight: 1558,
+    },
+    {
+      title: 'MK Medicare',
+      description: 'A responsive healthcare apparel portfolio showcasing medical scrubs, product collections, size guidance, business policies and customer enquiry options.',
+      category: 'Healthcare Portfolio',
+      services: ['Frontend Development', 'Responsive Design', 'Product Showcase', 'UI/UX Design'],
+      url: 'https://medicare-delta-azure.vercel.app/',
+      cover: mkMedicareCover,
+      coverAlt: 'Screenshot of the MK Medicare healthcare apparel portfolio homepage',
+      coverWidth: 2708,
+      coverHeight: 1560,
+    },
+    {
+      title: 'High Tech Welders',
+      description: 'A responsive corporate website presenting the company’s services, industries, projects and quotation experience across its diverse business operations.',
+      category: 'Corporate Website',
+      services: ['React Development', 'Responsive Design', 'Service Presentation', 'Quotation Experience'],
+      url: 'https://httwcorg.vercel.app/',
+      cover: highTechCover,
+      coverAlt: 'Screenshot of the High Tech Welders corporate website and its services',
+      coverWidth: 2698,
+      coverHeight: 1542,
+    },
+  ],
 }
