@@ -233,6 +233,131 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-purple-70
 .project-card__link:hover { color: var(--color-purple-900); }
 .project-card__link svg { width: 1rem; height: 1rem; flex: 0 0 auto; }
 
+.experience-section {
+  scroll-margin-top: 4.5rem;
+  padding: clamp(5rem, 9vw, 8rem) max(var(--space-3), calc((100vw - var(--content-width)) / 2));
+  background: var(--color-purple-50);
+}
+.experience-heading { max-width: 54rem; }
+.experience-heading h2 {
+  max-width: 17ch;
+  margin: 0;
+  color: var(--color-purple-900);
+  font-size: clamp(2.3rem, 5vw, 4.25rem);
+  letter-spacing: -0.045em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.experience-heading > p:last-child {
+  max-width: 42rem;
+  margin: var(--space-3) 0 0;
+  color: var(--color-text-muted);
+  font-size: clamp(1rem, 1.4vw, 1.1rem);
+}
+.experience-timeline {
+  position: relative;
+  display: grid;
+  gap: var(--space-3);
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-left: 1.8rem;
+}
+.experience-timeline::before {
+  position: absolute;
+  top: 1.5rem;
+  bottom: 1.5rem;
+  left: 0.35rem;
+  width: 1px;
+  background: var(--color-purple-300);
+  content: '';
+}
+.experience-entry {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(11rem, 0.42fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid rgb(100 54 180 / 0.16);
+  border-radius: 1.5rem;
+  background: var(--color-white);
+  box-shadow: 0 0.75rem 2rem rgb(50 21 106 / 0.05);
+}
+.experience-entry::before {
+  position: absolute;
+  top: 2.15rem;
+  left: -1.9rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid var(--color-white);
+  border-radius: 50%;
+  background: var(--color-purple-700);
+  box-shadow: 0 0 0 2px var(--color-purple-300);
+  content: '';
+}
+.experience-entry__meta { align-self: start; }
+.experience-entry__dates {
+  margin: 0;
+  color: var(--color-purple-900);
+  font-size: 0.9rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.experience-entry__current {
+  display: inline-block;
+  margin-top: 0.9rem;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--color-purple-300);
+  border-radius: 999px;
+  background: var(--color-purple-50);
+  color: var(--color-purple-700);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+.experience-entry h3 {
+  margin: 0;
+  color: var(--color-purple-900);
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  line-height: 1.25;
+}
+.experience-entry__role {
+  margin: 0.4rem 0 0;
+  color: var(--color-purple-700);
+  font-size: 1rem;
+  font-weight: 800;
+}
+.experience-entry__description {
+  max-width: 65ch;
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+.experience-entry h4 {
+  margin: var(--space-3) 0 0;
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+.experience-entry ul {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+.experience-entry li::marker { color: var(--color-purple-700); }
+.experience-entry__link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  color: var(--color-purple-700);
+  font-weight: 800;
+  text-underline-offset: 0.25em;
+}
+.experience-entry__link:hover { color: var(--color-purple-900); }
+
 .section { display: grid; min-height: 45vh; scroll-margin-top: 4.5rem; padding: var(--space-8) max(var(--space-3), calc((100vw - var(--content-width)) / 2)); place-items: center; }
 .section:nth-child(even) { background: var(--color-purple-100); }
 .section-content { width: 100%; }
@@ -261,6 +386,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--color-purple-70
 
 @media (max-width: 47.99rem) {
   .projects-grid { grid-template-columns: 1fr; }
+  .experience-entry { grid-template-columns: 1fr; gap: var(--space-2); }
+  .experience-entry__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; }
+  .experience-entry__current { margin-top: 0; }
   .hero { padding-top: 3.5rem; padding-bottom: 4.5rem; }
   .hero__content { grid-template-columns: 1fr; gap: 3.5rem; }
   .hero__copy { max-width: 40rem; }

@@ -135,3 +135,40 @@ export const projectsContent = {
     },
   ],
 }
+
+export const experienceContent = {
+  eyebrow: 'Professional Experience',
+  heading: 'Building solutions, managing brands and creating digital content.',
+  introduction: 'My experience combines technology, design and digital communication across my own business and collaborative brand work.',
+  entries: [
+    {
+      organization: 'BelNavo Tech',
+      role: 'Founder & Digital Solutions Specialist',
+      startDate: '2026-05-18',
+      dates: '18 May 2026 — Present',
+      current: true,
+      description: 'Founded BelNavo Tech to provide practical digital solutions for individuals, businesses and organizations through development, design and creative services.',
+      responsibilities: [
+        'Design and develop responsive websites and digital experiences.',
+        'Create user interfaces, brand identities and motion content.',
+        'Plan and deliver client-focused digital solutions.',
+        'Manage projects from initial ideas through final delivery.',
+      ],
+      url: 'https://belnavo-tech.onrender.com/',
+    },
+    {
+      organization: 'Ishanc.ng',
+      role: 'Social Media Manager, Video Editor & Post Designer',
+      startDate: '2026-09-10',
+      dates: '10 September 2026 — Present',
+      current: true,
+      description: 'Support Ishanc.ng’s online presence by managing its social media account and creating clear, professional visual content.',
+      responsibilities: [
+        'Manage the brand’s social media account and published content.',
+        'Edit videos for social media communication.',
+        'Design branded posts and promotional visuals.',
+        'Help maintain a clear and consistent digital presence.',
+      ],
+    },
+  ],
+}
