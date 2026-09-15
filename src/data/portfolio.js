@@ -172,3 +172,38 @@ export const experienceContent = {
     },
   ],
 }
+
+const whatsappMessage = encodeURIComponent('Hello Bello, I’m interested in discussing a project with you.')
+const whatsappUrl = `https://wa.me/2347037718954?text=${whatsappMessage}`
+
+export const contactContent = {
+  eyebrow: 'Let’s Work Together',
+  heading: 'Have a project or digital idea in mind?',
+  introduction: 'I’m available for website development, UI/UX design, branding, video editing, content creation, social media management, IT support, networking and security-conscious digital solutions.',
+  supportingText: 'Tell me what you are working on and let’s discuss how I can help bring it to life.',
+  availability: 'Available for projects and collaborations',
+  location: 'Katsina State, Nigeria',
+  primaryCta: { label: 'Chat on WhatsApp', url: whatsappUrl },
+  secondaryCta: { label: 'Send an Email', url: 'mailto:bashirbello627@gmail.com' },
+  methods: [
+    { name: 'Personal Email', label: 'Personal enquiries', value: 'bashirbello627@gmail.com', url: 'mailto:bashirbello627@gmail.com', type: 'email' },
+    { name: 'BelNavo Tech Email', label: 'Business enquiries', value: 'belnavo.tech@gmail.com', url: 'mailto:belnavo.tech@gmail.com', type: 'email' },
+    { name: 'WhatsApp', label: 'Direct conversation', value: '0703 771 8954', url: whatsappUrl, external: true },
+    { name: 'Personal Instagram', label: 'Follow my work', value: '@bellogyaza', url: 'https://www.instagram.com/bellogyaza', external: true },
+    { name: 'BelNavo Tech Instagram', label: 'Digital solutions and projects', value: '@belnavo.tech', url: 'https://www.instagram.com/belnavo.tech', external: true },
+  ],
+}
+
+export const footerContent = {
+  name: 'Bello Bashir Gyaza',
+  title: 'Full-Stack Developer & Digital Solutions Specialist',
+  founder: 'Founder of BelNavo Tech',
+  motto: 'Design. Develop. Deliver.',
+  credit: 'Built with care by Bello Bashir Gyaza.',
+  links: [
+    { label: 'Personal Instagram', url: 'https://www.instagram.com/bellogyaza', external: true },
+    { label: 'BelNavo Tech Instagram', url: 'https://www.instagram.com/belnavo.tech', external: true },
+    { label: 'WhatsApp', url: whatsappUrl, external: true },
+    { label: 'Personal Email', url: 'mailto:bashirbello627@gmail.com' },
+  ],
+}

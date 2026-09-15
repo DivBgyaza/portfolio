@@ -1,13 +1,13 @@
 import { Footer } from './components/Footer.jsx'
 import { Header } from './components/Header.jsx'
-import { aboutContent, experienceContent, heroContent, portfolioSections, projectsContent, servicesContent, skillsContent } from './data/portfolio.js'
+import { aboutContent, contactContent, experienceContent, footerContent, heroContent, portfolioSections, projectsContent, servicesContent, skillsContent } from './data/portfolio.js'
 import { About } from './sections/About.jsx'
+import { Contact } from './sections/Contact.jsx'
 import { Experience } from './sections/Experience.jsx'
 import { Hero } from './sections/Hero.jsx'
 import { Projects } from './sections/Projects.jsx'
 import { Services } from './sections/Services.jsx'
 import { Skills } from './sections/Skills.jsx'
-import { SectionPlaceholder } from './sections/SectionPlaceholder.jsx'
 
 export default function App() {
   return (
@@ -21,11 +21,9 @@ export default function App() {
         <Skills content={skillsContent} />
         <Projects content={projectsContent} />
         <Experience content={experienceContent} />
-        {portfolioSections.slice(6).map((section) => (
-          <SectionPlaceholder key={section.id} section={section} />
-        ))}
+        <Contact content={contactContent} />
       </main>
-      <Footer />
+      <Footer content={footerContent} sections={portfolioSections} />
     </div>
   )
 }
