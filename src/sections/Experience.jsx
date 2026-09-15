@@ -25,8 +25,8 @@ export function Experience({ content }) {
                 {entry.responsibilities.map((responsibility) => <li key={responsibility}>{responsibility}</li>)}
               </ul>
               {entry.url && (
-                <a className="experience-entry__link" href={entry.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit ${entry.organization} (opens in a new tab)`}>
-                  Visit {entry.organization} <span aria-hidden="true">↗</span>
+                <a className="experience-entry__link" href={entry.url} target="_blank" rel="noopener noreferrer" aria-label={`${entry.linkLabel ?? `Visit ${entry.organization}`} (opens in a new tab)`}>
+                  {entry.linkLabel ?? `Visit ${entry.organization}`} <span aria-hidden="true">↗</span>
                 </a>
               )}
             </div>
