@@ -169,6 +169,8 @@ export const experienceContent = {
         'Design branded posts and promotional visuals.',
         'Help maintain a clear and consistent digital presence.',
       ],
+      url: 'https://www.instagram.com/ishanc.ng',
+      linkLabel: 'Visit Ishanc.ng on Instagram',
     },
   ],
 }
