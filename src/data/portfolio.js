@@ -23,7 +23,7 @@ export const heroContent = {
   title: 'Full-Stack Developer & Digital Solutions Specialist',
   introduction: 'I design, develop, and deliver secure digital solutions for individuals, businesses, and organizations. From websites and user interfaces to branding, motion design, IT support, and cybersecurity, I turn ideas into practical digital experiences.',
   availability: 'Available for projects and collaborations',
-  roles: ['Full-Stack Development', 'UI/UX Design', 'Branding & Motion', 'IT & Cybersecurity'],
+  roles: ['Full-Stack Development', 'UI/UX Design', 'Branding, Motion & Video', 'Content & Social Media', 'IT, Networking & Cybersecurity'],
 }
 
 export const aboutContent = {
@@ -32,6 +32,7 @@ export const aboutContent = {
   paragraphs: [
     'I’m Bello Bashir Gyaza, a multidisciplinary digital professional and the founder of BelNavo Tech. I combine software development, design and information technology to create practical solutions for individuals, businesses and organizations.',
     'Through BelNavo Tech, I help clients transform their ideas into responsive websites, digital products and strong visual identities. My approach focuses on understanding the real problem, creating a clear solution and delivering work that is secure, accessible and easy to use.',
+    'I also create video content, manage social media accounts and provide practical networking and IT support for digital projects and organizations.',
   ],
   location: 'Katsina State, Nigeria',
   values: [
@@ -52,6 +53,10 @@ export const servicesContent = {
     { icon: 'support', title: 'IT Solutions', description: 'Practical IT support, system guidance, troubleshooting and digital consulting for individuals and organizations.' },
     { icon: 'security', title: 'Cybersecurity', description: 'Security-conscious development, basic security assessment and practical guidance for protecting digital systems and information.' },
     { icon: 'solutions', title: 'Digital Solutions', description: 'End-to-end support for digital ideas, combining planning, design, development and implementation into one coordinated solution.' },
+    { icon: 'motion', title: 'Video Editing', description: 'Professional editing for social media videos, promotional content and clear visual storytelling.' },
+    { icon: 'design', title: 'Content Creation', description: 'Planning and creating useful visual content, branded posts and promotional materials for digital platforms.' },
+    { icon: 'support', title: 'Social Media Management', description: 'Managing social media accounts, organizing published content and maintaining a consistent brand presence.' },
+    { icon: 'support', title: 'Networking & IT Support', description: 'Practical networking and IT services including network setup, IP configuration, troubleshooting and system connectivity support.' },
   ],
 }
 
@@ -74,11 +79,11 @@ export const skillsContent = {
     },
     {
       title: 'UI/UX & Creative Design',
-      skills: ['UI/UX Design', 'Wireframing', 'Prototyping', 'Graphic Design', 'Brand Identity', 'Motion Design'],
+      skills: ['UI/UX Design', 'Wireframing', 'Prototyping', 'Graphic Design', 'Brand Identity', 'Video Editing', 'Content Creation', 'Social Media Content', 'Post Design', 'Motion Design'],
     },
     {
       title: 'IT & Cybersecurity',
-      skills: ['IT Support', 'System Troubleshooting', 'Computer Networking', 'Cybersecurity Fundamentals', 'Web Application Security', 'Security-Conscious Development'],
+      skills: ['IT Support', 'System Troubleshooting', 'Computer Networking', 'Network Installation and Configuration', 'LAN Setup and IP Configuration', 'Router and Access-Point Configuration', 'Network Troubleshooting', 'Basic Network Security', 'Cybersecurity Fundamentals', 'Web Application Security', 'Security-Conscious Development'],
     },
   ],
   process: ['Plan', 'Design', 'Develop', 'Secure', 'Deliver'],
