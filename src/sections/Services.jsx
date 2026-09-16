@@ -13,7 +13,7 @@ export function Services({ content }) {
       </ScrollReveal>
       <div className="service-grid">
         {content.services.map((service, index) => (
-          <ScrollReveal as="article" className="service-card" key={service.title} tabIndex="0" delay={(index % 3) * 70}>
+          <ScrollReveal as="article" className="service-card" key={service.title} tabIndex="0" delay={(index % 4) * 120}>
             <div className="service-card__top">
               <span className="service-card__icon"><ServiceIcon name={service.icon} /></span>
               <span className="service-card__number" aria-hidden="true">0{index + 1}</span>

@@ -13,7 +13,7 @@ export function Skills({ content }) {
 
       <div className="skills-grid">
         {content.categories.map((category, index) => (
-          <ScrollReveal as="article" className="skill-category" key={category.title} delay={(index % 3) * 70}>
+          <ScrollReveal as="article" className="skill-category" key={category.title} delay={(index % 4) * 120}>
             <div className="skill-category__heading">
               <span aria-hidden="true">0{index + 1}</span>
               <h3>{category.title}</h3>

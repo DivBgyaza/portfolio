@@ -10,8 +10,8 @@ export function Projects({ content }) {
       </ScrollReveal>
 
       <div className="projects-grid">
-        {content.projects.map((project) => (
-          <ScrollReveal as="article" className="project-card" key={project.title} delay={(project.title.length % 3) * 70}>
+        {content.projects.map((project, index) => (
+          <ScrollReveal as="article" className="project-card" key={project.title} delay={(index % 4) * 120}>
             <div className="project-card__media">
               <img
                 src={project.cover}

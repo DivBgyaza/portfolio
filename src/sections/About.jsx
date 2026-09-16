@@ -25,7 +25,7 @@ export function About({ content }) {
       </div>
       <ul className="value-list" aria-label="Core values">
         {content.values.map((value, index) => (
-          <ScrollReveal as="li" key={value.title} className="value-item" delay={index * 70}>
+          <ScrollReveal as="li" key={value.title} className="value-item" delay={(index % 4) * 120}>
             <span className="value-number" aria-hidden="true">0{index + 1}</span>
             <div><h3>{value.title}</h3><p>{value.description}</p></div>
           </ScrollReveal>

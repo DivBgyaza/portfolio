@@ -11,7 +11,7 @@ export function Experience({ content }) {
 
       <div className="experience-timeline">
         {content.entries.map((entry, index) => (
-          <ScrollReveal as="article" className="experience-entry" key={entry.organization} delay={index * 90}>
+          <ScrollReveal as="article" className="experience-entry" key={entry.organization} delay={(index % 4) * 120}>
             <div className="experience-entry__meta">
               <p className="experience-entry__dates">
                 <time dateTime={entry.startDate}>{entry.dates.split(' — ')[0]}</time> — Present

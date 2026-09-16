@@ -22,19 +22,20 @@ function getSharedObserver() {
   return sharedObserver
 }
 
-export function ScrollReveal({ as = 'div', children, className = '', direction = 'up', delay = 0, ...props }) {
+export function ScrollReveal({ as = 'div', children, className = '', direction = 'up', delay = 0, distance, ...props }) {
   const elementRef = useRef(null)
   const Component = as
 
   useEffect(() => {
     const element = elementRef.current
+    if (distance) element?.style.setProperty('--reveal-distance', distance)
     if (!element || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return undefined
     const observer = getSharedObserver()
     if (!observer) return undefined
     element.classList.add('scroll-reveal--pending')
     const timeoutId = window.setTimeout(() => {
       if (observedElements.has(element)) revealElement(element)
-    }, 4000)
+    }, 9000)
     observedElements.set(element, timeoutId)
     observer.observe(element)
     return () => {
@@ -43,7 +44,7 @@ export function ScrollReveal({ as = 'div', children, className = '', direction =
       window.clearTimeout(observedElements.get(element))
       observedElements.delete(element)
     }
-  }, [])
+  }, [distance])
 
   const { style, ...restProps } = props
   return <Component ref={elementRef} className={`scroll-reveal scroll-reveal--${direction} ${className}`.trim()} style={{ '--reveal-delay': `${delay}ms`, ...style }} {...restProps}>{children}</Component>
