@@ -1,15 +1,17 @@
+import { ScrollReveal } from '../components/ScrollReveal.jsx'
+
 export function Projects({ content }) {
   return (
     <section className="projects-section" id="projects" aria-labelledby="projects-heading">
-      <div className="projects-heading">
+      <ScrollReveal className="projects-heading">
         <p className="eyebrow">{content.eyebrow}</p>
         <h2 id="projects-heading">{content.heading}</h2>
         <p>{content.introduction}</p>
-      </div>
+      </ScrollReveal>
 
       <div className="projects-grid">
         {content.projects.map((project) => (
-          <article className="project-card" key={project.title}>
+          <ScrollReveal as="article" className="project-card" key={project.title} delay={(project.title.length % 3) * 70}>
             <div className="project-card__media">
               <img
                 src={project.cover}
@@ -34,7 +36,7 @@ export function Projects({ content }) {
                 </svg>
               </a>
             </div>
-          </article>
+          </ScrollReveal>
         ))}
       </div>
     </section>

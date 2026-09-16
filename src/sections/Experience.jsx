@@ -1,15 +1,17 @@
+import { ScrollReveal } from '../components/ScrollReveal.jsx'
+
 export function Experience({ content }) {
   return (
     <section className="experience-section" id="experience" aria-labelledby="experience-heading">
-      <div className="experience-heading">
+      <ScrollReveal className="experience-heading">
         <p className="eyebrow">{content.eyebrow}</p>
         <h2 id="experience-heading">{content.heading}</h2>
         <p>{content.introduction}</p>
-      </div>
+      </ScrollReveal>
 
       <div className="experience-timeline">
-        {content.entries.map((entry) => (
-          <article className="experience-entry" key={entry.organization}>
+        {content.entries.map((entry, index) => (
+          <ScrollReveal as="article" className="experience-entry" key={entry.organization} delay={index * 90}>
             <div className="experience-entry__meta">
               <p className="experience-entry__dates">
                 <time dateTime={entry.startDate}>{entry.dates.split(' — ')[0]}</time> — Present
@@ -30,7 +32,7 @@ export function Experience({ content }) {
                 </a>
               )}
             </div>
-          </article>
+          </ScrollReveal>
         ))}
       </div>
     </section>

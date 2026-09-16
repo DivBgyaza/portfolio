@@ -1,7 +1,9 @@
+import { ScrollReveal } from '../components/ScrollReveal.jsx'
+
 export function Contact({ content }) {
   return (
     <section className="contact-section" id="contact" aria-labelledby="contact-heading">
-      <div className="contact-section__intro">
+      <ScrollReveal className="contact-section__intro" direction="left">
         <p className="eyebrow">{content.eyebrow}</p>
         <h2 id="contact-heading">{content.heading}</h2>
         <p className="contact-section__lead">{content.introduction}</p>
@@ -14,21 +16,24 @@ export function Contact({ content }) {
           <a className="button button--primary" href={content.primaryCta.url} target="_blank" rel="noopener noreferrer">{content.primaryCta.label}</a>
           <a className="button button--secondary" href={content.secondaryCta.url}>{content.secondaryCta.label}</a>
         </div>
-      </div>
+      </ScrollReveal>
 
       <address className="contact-methods" aria-label="Contact methods">
         {content.methods.map((method) => (
-          <a
+          <ScrollReveal
+            as="a"
             className="contact-method"
             href={method.url}
             key={method.name}
+            direction="right"
+            delay={method.name.length * 10}
             {...(method.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
           >
             <span className="contact-method__name">{method.name}</span>
             <span className="contact-method__label">{method.label}</span>
             <span className="contact-method__value">{method.value}</span>
             <span className="contact-method__arrow" aria-hidden="true">↗</span>
-          </a>
+          </ScrollReveal>
         ))}
       </address>
     </section>
