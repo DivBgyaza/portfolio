@@ -13,7 +13,7 @@ function getSharedObserver() {
       sharedObserver.unobserve(entry.target)
       observedElements.delete(entry.target)
     })
-  }, { threshold: 0.1, rootMargin: '0px 0px 12% 0px' })
+  }, { threshold: 0.08, rootMargin: '0px 0px 12% 0px' })
   return sharedObserver
 }
 
