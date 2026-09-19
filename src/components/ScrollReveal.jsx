@@ -16,7 +16,7 @@ function getSharedObserver() {
   if (sharedObserver || typeof IntersectionObserver === 'undefined') return sharedObserver
   sharedObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-      if (entry.isIntersecting) revealElement(entry.target)
+      if (entry.isIntersecting) window.setTimeout(() => revealElement(entry.target), 24)
     })
   }, { threshold: 0.08, rootMargin: '0px 0px 12% 0px' })
   return sharedObserver
