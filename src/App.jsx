@@ -1,11 +1,12 @@
 import { Footer } from './components/Footer.jsx'
 import { Header } from './components/Header.jsx'
-import { aboutContent, contactContent, experienceContent, footerContent, heroContent, portfolioSections, projectsContent, servicesContent, skillsContent } from './data/portfolio.js'
+import { aboutContent, contactContent, experienceContent, footerContent, heroContent, portfolioSections, projectsContent, recognitionContent, servicesContent, skillsContent } from './data/portfolio.js'
 import { About } from './sections/About.jsx'
 import { Contact } from './sections/Contact.jsx'
 import { Experience } from './sections/Experience.jsx'
 import { Hero } from './sections/Hero.jsx'
 import { Projects } from './sections/Projects.jsx'
+import { Recognition } from './sections/Recognition.jsx'
 import { Services } from './sections/Services.jsx'
 import { Skills } from './sections/Skills.jsx'
 
@@ -20,7 +21,7 @@ export default function App() {
         <Services content={servicesContent} />
         <Skills content={skillsContent} />
         <Projects content={projectsContent} />
-        <Experience content={experienceContent} />
+        <Experience content={experienceContent} />`n        <Recognition content={recognitionContent} />
         <Contact content={contactContent} />
       </main>
       <Footer content={footerContent} sections={portfolioSections} />

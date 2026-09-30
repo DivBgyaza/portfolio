@@ -2,6 +2,11 @@ import belnavoCover from '../assets/projects/belnavo-tech.png'
 import mhwunCover from '../assets/projects/mhwun-katsina.png'
 import mkMedicareCover from '../assets/projects/mk-medicare.png'
 import highTechCover from '../assets/projects/high-tech-welders.png'
+import recognition1 from '../assets/recognition/cyber-security-recognition-1.jpeg'
+import recognition2 from '../assets/recognition/cyber-security-recognition-2.jpeg'
+import recognition3 from '../assets/recognition/cyber-security-recognition-3.jpeg'
+import recognition4 from '../assets/recognition/cyber-security-recognition-4.jpeg'
+import recognition5 from '../assets/recognition/cyber-security-recognition-5.jpeg'
 
 export const portfolioSections = [
   {
@@ -138,6 +143,19 @@ export const projectsContent = {
       coverWidth: 2698,
       coverHeight: 1542,
     },
+  ],
+}
+
+export const recognitionContent = {
+  eyebrow: 'Recognition',
+  heading: 'Cyber Security Essentials Specialist',
+  description: 'Recognized by Kabir Kabir Ibrahim, Founder of Kebram Tech and Cisco Networking, for successfully completing and demonstrating Cyber Security Essentials knowledge.',
+  slides: [
+    { id: 'recognition-1', src: recognition1, alt: 'Cyber Security Essentials recognition moment at Kebram Tech' },
+    { id: 'recognition-2', src: recognition2, alt: 'Bello Bashir Gyaza receiving a Cyber Security Essentials certificate' },
+    { id: 'recognition-3', src: recognition3, alt: 'Bello Bashir Gyaza holding a Cyber Security Essentials certificate' },
+    { id: 'recognition-4', src: recognition4, alt: 'Cyber Security Essentials recognition presentation' },
+    { id: 'recognition-5', src: recognition5, alt: 'Cyber Security Essentials certificate presentation at Kebram Tech' },
   ],
 }
 
